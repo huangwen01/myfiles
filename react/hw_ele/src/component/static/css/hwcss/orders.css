@@ -1,0 +1,28 @@
+/*html{font-size: 625%; background-color:#f5f5f5;}
+body{font-size: .16rem;margin-bottom:.5rem; }*/
+.order_content .header{width: 100%;height: .56rem;background-color: #0096ff;position: relative;}
+.order_content .header h2{color: #fff;margin-left:.16rem; line-height:.56rem;font-size:.2rem;font-weight:100}
+
+/*未登录状态*/
+.order_content .no_log_content{width:100%; height:100%;text-align:center;    margin-top: 1rem;display:none}
+.order_content .no_log_content img{ width:1.5rem; height:1.5rem;display:inline-block;}
+.order_content .no_log_content button{display:inline-block;margin-top:.1rem; width:1.25rem; height:.4rem; border:0;; background-color:#4dc060;color: #fff;border-radius:.06rem}
+
+/*登录状态*/
+.order_content .orders_top{ width:100%; height:2.22rem;box-sizing:border-box;-moz-box-sizing:border-box;padding: .23rem .15rem .31rem; background-color:#fff;}
+.order_content .orders_top h4 span{float:right;color: #0094ff;font-size:.14rem}
+.order_content .record{text-align:center}
+.order_content .record img{width:.53rem; height:.47rem;    margin-top: .4rem;margin-bottom:.26rem;margin-left: .8rem}
+.order_content .record p{ font-size:.12rem;color: #666;}
+
+.order_content .orders_center{margin-top:.07rem;width:100%; height:2.22rem;box-sizing:border-box;-moz-box-sizing:border-box;padding: .23rem .15rem .31rem; background-color:#fff}
+.order_content .seller{text-align:center}
+.order_content .seller img{width:.53rem; height:.47rem;    margin-top: .4rem;margin-bottom:.26rem}
+.order_content .seller p{ font-size:.12rem;color: #666;}
+
+
+
+
+.order_content .footer{ width:100%; height:.5rem; background-color:#f7f7f7;position:fixed; bottom:0px;border-top:1px solid #c8c8c8;}
+.order_content .footer ul li{float:left; width:25%;text-align:center;font-size:.12rem}
+.order_content .footer ul li i{display:block;margin-top:.1rem}

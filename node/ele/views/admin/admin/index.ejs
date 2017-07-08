@@ -1,0 +1,181 @@
+<%-include ../public/header%>
+
+<!--[if lt IE 7 ]> <body class="ie ie6"> <![endif]-->
+<!--[if IE 7 ]> <body class="ie ie7 "> <![endif]-->
+<!--[if IE 8 ]> <body class="ie ie8 "> <![endif]-->
+<!--[if IE 9 ]> <body class="ie ie9 "> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<body class="">
+<!--<![endif]-->
+
+
+<%-include ../public/navbar%>
+
+<%-include ../public/nav%>
+
+
+
+<div class="content">
+
+    <div class="header">
+
+        <h1 class="page-title">Admin</h1>
+    </div>
+
+    <ul class="breadcrumb">
+        <li><a href="<%=host%>">Home</a> <span class="divider">/</span></li>
+        <li class="active">Admin</li>
+    </ul>
+
+    <div class="container-fluid">
+        <div class="row-fluid">
+
+            <div class="btn-toolbar">
+                <button  class="btn btn-primary" id="addadmin"><i class="icon-plus"></i>
+                <a href="<%=host%>admin/admin/add">New Admin</a>
+                </button>
+                <button class="btn">Import</button>
+                <button class="btn">Export</button>
+                <div class="btn-group">
+                </div>
+            </div>
+            <div class="well">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>num</th>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>img</th>
+                            <th>password</th>
+                            <th>sex</th>
+                            <th>注册时间</th>
+                            <th>status</th>
+                            <th style="width: 26px;"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%for(var i=0;i<list.length;i++){%>
+                        <tr>
+                            <td><%=i+1%></td>
+                            <td id="id"><%=list[i]._id%></td>
+                            <td><%=list[i].Name%></td>
+                            <td><img src="<%=list[i].imgpath%>" alt="" style="height:50px;width:50px"></td>
+                            <td><%=list[i].password%></td>
+                            <td><%=list[i].sex%></td>
+                            <td><%=list[i].add_time%></td>
+                            <td>
+                                <%if(parseInt(list[i].status)==1){%>
+                                <a class="updata" href="javascript:;">启用</a>
+                                <%}else{%>
+                                <a class="updata" href="javascript:;">未启用</a>
+                                <%}%>
+                            </td>
+                            <td>
+                                <a href="<%=host%>admin/admin/edit?id=<%=list[i]._id%>"><i class="icon-pencil"></i></a>
+                                <a href="<%=host%>admin/admin/delete?id=<%=list[i]._id%>"><i class="icon-remove"></i></a>
+                            </td>
+                        </tr>
+                    <%}%>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination">
+                <ul>
+                    <%if(count>0){%>
+                  <li class="prev">
+                      <a href="<%=host%>admin/admin?count=<%=count%>">Prev</a>
+                  </li>
+                    <%}else{%>
+
+                    <li><a href="<%=host%>admin/admin?count=1">Prev</a></li>
+                    <%}%>
+
+                    <%for(var j=1;j<Page;j++){%>
+
+                    <li>
+                        <a href="<%=host%>admin/admin?count=<%=j%>"><%=j%></a>
+                    </li>
+                    <%}%>
+
+                    <%if(count<Page-1){%>
+                    <li class="next">
+
+                        <a href="<%=host%>admin/admin?count<%=count+2%>">Next</a>
+                        <!--count+2 下一页 到后台默认减一 -->
+                    </li>
+                    <%}else{%>
+                    <li class="next">
+
+                        <a href="<%=host%>admin/admin?count<%=Page%>">Next</a>
+                        <!--count+2 下一页 到后台默认减一 -->
+                    </li>
+                    <%}%>
+
+                </ul>
+            </div>
+
+            <div class="modal small hide fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="myModalLabel">Delete Confirmation</h3>
+                </div>
+                <div class="modal-body">
+                    <p class="error-text"><i class="icon-warning-sign modal-icon"></i>Are you sure you want to delete the user?</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                    <button class="btn btn-danger" data-dismiss="modal">Delete</button>
+                </div>
+            </div>
+
+
+
+            <footer>
+                <hr>
+
+                <!-- Purchase a site license to remove this link from the footer: http://www.portnine.com/bootstrap-themes -->
+                <p class="pull-right">A <a href="http://www.portnine.com/bootstrap-themes" target="_blank">Free Bootstrap Theme</a> by <a href="http://www.portnine.com" target="_blank">Portnine</a></p>
+
+                <p>© 2012 <a href="http://www.portnine.com" target="_blank">Portnine</a></p>
+            </footer>
+
+        </div>
+    </div>
+</div>
+
+
+
+<script src="<%=host%>lib/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript">
+    $("[rel=tooltip]").tooltip();
+    $(function() {
+        $('.demo-cancel-click').click(function(){return false;});
+
+        $('.updata').click(function(){
+            var status="";
+            var _this=$(this)
+            var id=$(this).closest('tr').find('td').eq(1).text();
+//            console.log(id);
+
+            if(_this.text()=="启用"){
+                status=1
+            }else{
+                status=0
+            }
+            $.get("<%=host%>admin/admin/updataStatus",{'status':status,'id':id},function(result){
+                console.log(result);
+                if(result.status==1){
+                    _this.text('启用')
+                }else {
+                    _this.text('未启用')
+                }
+            })
+        })
+    });
+</script>
+
+</body>
+</html>
+
+

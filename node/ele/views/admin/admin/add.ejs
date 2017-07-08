@@ -1,0 +1,141 @@
+<%-include ../public/header%>
+
+<!--[if lt IE 7 ]> <body class="ie ie6"> <![endif]-->
+<!--[if IE 7 ]> <body class="ie ie7 "> <![endif]-->
+<!--[if IE 8 ]> <body class="ie ie8 "> <![endif]-->
+<!--[if IE 9 ]> <body class="ie ie9 "> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<body class="">
+<!--<![endif]-->
+
+
+<%-include ../public/navbar%>
+
+<%-include ../public/nav%>
+
+
+
+<div class="content">
+
+    <div class="header">
+
+        <h1 class="page-title">Edit User</h1>
+    </div>
+
+    <ul class="breadcrumb">
+        <li><a href="<%host%>">Home</a> <span class="divider">/</span></li>
+        <li><a href="<%host%>admin">Admin</a> <span class="divider">/</span></li>
+        <li class="active">Admin-add</li>
+    </ul>
+
+    <div class="container-fluid">
+        <div class="row-fluid">
+
+            <!--<div class="btn-toolbar">-->
+                <!--<button class="btn btn-primary"><i class="icon-save"></i> 保存-->
+                    <!--&lt;!&ndash;<a href="<%=host%>/admin/user"></a>&ndash;&gt;-->
+                <!--</button>-->
+                <!--<a href="#myModal" data-toggle="modal" class="btn">返回</a>-->
+                <!--<div class="btn-group">-->
+                <!--</div>-->
+            <!--</div>-->
+            <div class="well">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#home" data-toggle="tab">Profile</a></li>
+                    <li><a href="#profile" data-toggle="tab">Password</a></li>
+                </ul>
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane active in" id="home">
+                        <!--enctype="multipart/form-data 上传图片要加"-->
+                        <form id="tab" enctype="multipart/form-data" action='<%=host%>admin/admin/doAdd'  method="post">
+
+
+
+                            <label for="">用户账号</label>
+                            <input type="text" name="AdminName"/>
+
+                            <label for="">姓名</label>
+                            <input type="text" name="Name"/>
+
+                            <label for="">密码</label>
+                            <input type="text" name="password"/>
+
+                            <label for="">性别</label>
+                            <input type="text" name="sex"/>
+
+                            <label for="">头像</label>
+                            <!--<input type="file " name="face"/>-->
+                            <input type="file" name="face" />
+
+                            <label for="">生日</label>
+                            <input type="text" name="birthday"/>
+
+                            <label for="">状态</label>
+                            <label for="status">启用:</label><input id="status" type="radio" class="input-xlarge" name="status" value="1">
+                            <label for="status0">未启用:</label><input id="status0" type="radio" class="input-xlarge" name="status" value="0" >
+
+
+
+
+                            <br/>
+                            <label>注册时间</label>
+                            <!--<input type  ="text" name="add_time" />-->
+                            <%var date=new Date()%>
+                            <%date=date.toLocaleString();%>
+                            <input type="text" value="<%=date%>" class="input-xlarge" name="add_time">
+
+                            <button  class="btn btn-primary" ><i class="icon-save"></i> 保存
+
+                            </button>
+                        </form>
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="modal small hide fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="myModalLabel">Delete Confirmation</h3>
+                </div>
+                <div class="modal-body">
+
+                    <p class="error-text"><i class="icon-warning-sign modal-icon"></i>Are you sure you want to delete the user?</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                    <button class="btn btn-danger" data-dismiss="modal">Delete</button>
+                </div>
+            </div>
+
+
+
+            <footer>
+                <hr>
+
+                <!-- Purchase a site license to remove this link from the footer: http://www.portnine.com/bootstrap-themes -->
+                <p class="pull-right">A <a href="http://www.portnine.com/bootstrap-themes" target="_blank">Free Bootstrap Theme</a> by <a href="http://www.portnine.com" target="_blank">Portnine</a></p>
+
+                <p>© 2012 <a href="http://www.portnine.com" target="_blank">Portnine</a></p>
+            </footer>
+
+        </div>
+    </div>
+</div>
+
+<script src="<%=host%>lib/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript">
+    $("[rel=tooltip]").tooltip();
+    $(function() {
+        $('.demo-cancel-click').click(function(){return false;});
+    });
+</script>
+
+</body>
+</html>
+
+

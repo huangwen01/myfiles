@@ -1,0 +1,164 @@
+/*html {
+  font-size: 62.5%;
+  height: 100%;
+  position: relative;
+}
+body {
+  font-size: 1.2rem;
+}*/
+.pla_ord #header {
+  padding: 0 1.6rem;
+  height: 5rem;
+  background: #2395ff;
+  display: -webkit-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.pla_ord #header .header-Return {
+  font-size: 1.6rem;
+  color: #fff;
+}
+.pla_ord #header .header-title {
+  margin-left: -3rem;
+  color: #fff;
+  font-size: 1.6rem;
+}
+.pla_ord #main {
+  padding: 0.8rem 0.8rem 0 0.8rem;
+}
+.pla_ord .address {
+  background: #2395ff;
+  height: 6.5rem;
+  text-align: center;
+}
+.pla_ord .address .address-top {
+  line-height: 3.5rem;
+  font-size: 1.6rem;
+  color: #fff;
+}
+.pla_ord .pla_ord .address .Customer {
+  margin-left: .6rem;
+  font-size: 1.4rem;
+  color: #fff;
+}
+.pla_ord .Estimated-time {
+  background: #fff;
+}
+.pla_ord .Estimated-time .Estimated-time-top {
+  border-bottom: 1px solid #eeeeee;
+  height: 4.8rem;
+  line-height: 4.8rem;
+  background: #fff;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+.pla_ord .Estimated-time .Estimated-time-top span {
+  margin-left: 1.3rem;
+}
+.pla_ord .Payment-method {
+  height: 4.8rem;
+  line-height: 4.8rem;
+  background: #fff;
+  font-size: 1.6rem;
+}
+.pla_ord .Payment-method span {
+  font-weight: bold;
+  margin-left: 1.3rem;
+}
+.pla_ord .Order-information {
+  border-bottom: 1rem solid #f5f5f5;
+  border-top: 1rem solid #f5f5f5;
+  background: #fff;
+}
+.pla_ord .Order-information .Order-information-title {
+  background: #fff;
+  padding: 0 1.4rem;
+  height: 4rem;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: center;
+}
+.pla_ord .Order-information .Order-information-title img {
+  margin-right: 1.4rem;
+  width: 1.9rem;
+  height: 1.9rem;
+}
+.pla_ord .Order-information .Order-information-title span {
+  font-size: 1.8rem;
+}
+.pla_ord .Order-information-content {
+  padding: 0 1.4rem;
+}
+.pla_ord .Order-information-content ul li {
+  border-top: 1px solid #eeeeee;
+  height: 4rem;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pla_ord .Order-information-content ul li div:nth-child(1) {
+  font-size: 1.6rem;
+}
+.pla_ord .Order-information-content ul .Package-name .num {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.pla_ord .Order-note {
+  color: #999;
+  background: #fff;
+  padding: 0 1.4rem;
+}
+.pla_ord .Order-note .Flavor {
+  color: #333;
+  height: 4rem;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pla_ord .Order-note .Flavor .Flavor-right {
+  color: #999;
+}
+.pla_ord .Order-note .invoice {
+  border-top: 1px solid #eeeeee;
+  height: 4rem;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.pla_ord #footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+.pla_ord #footer .footer-inner {
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pla_ord #footer .footer-inner .money {
+  display: -webkit-flex;
+  align-items: center;
+  height: 5rem;
+  -webkit-flex: 1;
+  background: #4e4e4e;
+}
+.pla_ord #footer .footer-inner .money span {
+  display: inline-block;
+  margin-left: 1.4rem;
+  font-size: 1.6rem;
+  color: #fff;
+}
+.pla_ord #footer .footer-inner .Settlement {
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: 12.8rem;
+  background: #58d178;
+}
+.pla_ord #footer .footer-inner .Settlement span {
+  font-size: 1.6rem;
+  color: #fff;
+}

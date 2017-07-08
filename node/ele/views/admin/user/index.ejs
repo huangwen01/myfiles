@@ -1,0 +1,131 @@
+<%-include ../public/header%>
+
+<!--[if lt IE 7 ]> <body class="ie ie6"> <![endif]-->
+<!--[if IE 7 ]> <body class="ie ie7 "> <![endif]-->
+<!--[if IE 8 ]> <body class="ie ie8 "> <![endif]-->
+<!--[if IE 9 ]> <body class="ie ie9 "> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<body class="">
+<!--<![endif]-->
+
+
+<%-include ../public/navbar%>
+
+<%-include ../public/nav%>
+
+
+
+<div class="content">
+
+    <div class="header">
+
+        <h1 class="page-title">用户管理中心</h1>
+    </div>
+
+    <ul class="breadcrumb">
+        <li>
+            <div class="input-append">
+                <form action="<%=host%>admin/user/search" method="post">
+                    <input class="span2" id="appendedInputButton" type="text" name="username" placeholder="用户名" style="margin-right:5px">
+                    <input class="span2" id="appendedInputButton" type="text" name="phone" placeholder="电话" style="margin-right:5px">
+                    <input class="span2" id="appendedInputButton" type="text" name="status" placeholder="状态" style="margin-right:5px">
+                    <button class="btn" type="submit">搜索</button>
+                </form>
+            </div>
+        </li>
+    </ul>
+
+    <div class="container-fluid">
+        <div class="row-fluid">
+
+            <div class="btn-toolbar">
+            </div>
+            <div class="well">
+                <table class="table">
+                    <thead>
+                        <tr style="text-align:center;">
+                            <th>Name</th>
+                            <th>img</th>
+                            <th>password</th>
+                            <th>phone</th>
+                            <th>status</th>
+                            <th>add_time</th>
+                            <th>set</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <%for(var i=0;i<data.length;i++){%>
+                            <tr>
+                                <td><%=data[i].username%></td>
+                                <td><%=data[i].img%></td>
+                                <td><%=data[i].password%></td>
+                                <td><%=data[i].phone%></td>
+                                <td>
+                                    <a href="<%=host%>admin/user/edit?id=<%=data[i]._id%>&status=<%=data[i].status%>" style="max-width:30px"><%=data[i].status%></a></td>
+                                <td><%=data[i].add_time%></td>
+                                <td><a href="<%=host%>admin/user/del?id=<%=data[i]._id%>">删除</a></td>
+                            </tr>
+                        <%}%>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination">
+                <ul>
+                    <%if(page<=1){%>
+                     <li><a href="<%=host%>admin/user?page=1">Prev</a></li>
+                    <%}else{%>
+                        <li><a href="<%=host%>admin/user?page=<%=page-1%>">Prev</a></li>
+                   <%}%>
+                    <%for(var k=1;k<allpage;k++){%>
+
+                        <li><a href="<%=host%>admin/user?page=<%=k%>"><%=k%></a></li>
+
+                    <%}%>
+                    <%if(page>=allpage-1){%>
+                        <li><a href="<%=host%>admin/user?page=<%=allpage-1%>">Next</a></li>
+                    <%}else{%>
+                    <li><a href="<%=host%>admin/user?page=<%=page+1%>">Next</a></li>
+                   <%}%>
+                </ul>
+            </div>
+
+            <div class="modal small hide fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="myModalLabel">Delete Confirmation</h3>
+                </div>
+                <div class="modal-body">
+                    <p class="error-text"><i class="icon-warning-sign modal-icon"></i>Are you sure you want to delete the user?</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+                    <button class="btn btn-danger" data-dismiss="modal">Delete</button>
+                </div>
+            </div>
+            <footer>
+                <hr>
+
+                <!-- Purchase a site license to remove this link from the footer: http://www.portnine.com/bootstrap-themes -->
+                <p class="pull-right">A <a href="http://www.portnine.com/bootstrap-themes" target="_blank">Free Bootstrap Theme</a> by <a href="http://www.portnine.com" target="_blank">Portnine</a></p>
+
+                <p>© 2012 <a href="http://www.portnine.com" target="_blank">Portnine</a></p>
+            </footer>
+
+        </div>
+    </div>
+</div>
+
+
+
+<script src="<%=host%>lib/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript">
+    $("[rel=tooltip]").tooltip();
+    $(function() {
+        $('.demo-cancel-click').click(function(){return false;});
+    });
+</script>
+
+</body>
+</html>
+
+

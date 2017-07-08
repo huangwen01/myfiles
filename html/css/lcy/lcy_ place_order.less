@@ -1,0 +1,212 @@
+html{
+  font-size:62.5%;
+  height:100%;
+
+  position:relative;
+
+}
+body{
+  font-size:1.2rem;
+
+}
+
+#header{
+  padding: 0 1.6rem;
+  height:5rem;
+  background:#2395ff;
+  display:-webkit-flex;
+  flex-direction:row;
+
+  justify-content:space-between;
+  align-items:center;
+  .header-Return{
+    font-size:1.6rem;
+    color:#fff;
+  }
+  .header-title{
+    margin-left:-3rem;
+    color:#fff;
+      font-size:1.6rem;
+  }
+}
+
+#main{
+
+  padding:0.8rem 0.8rem 0 0.8rem;
+}
+
+//地址
+.address{
+  background:#2395ff;
+  height:6.5rem;
+  text-align:center;
+  .address-top{
+    line-height: 3.5rem;
+    font-size:1.6rem;
+    color:#fff;
+  }
+  .Customer{
+    //margin-top:1rem;
+    margin-left:.6rem;
+    font-size:1.4rem;
+    color:#fff;
+  }
+}
+.Estimated-time{
+
+background:#fff;
+  .Estimated-time-top{
+
+    border-bottom:1px solid #eeeeee;
+    height:4.8rem;
+    line-height:4.8rem;;
+    background:#fff;
+    font-weight:bold;
+    font-size:1.6rem;
+    span{
+      margin-left:1.3rem;
+    }
+  }
+}
+.Payment-method{
+  height:4.8rem;
+  line-height:4.8rem;;
+  background:#fff;
+  font-size:1.6rem;
+  span{
+    font-weight:bold;
+    margin-left:1.3rem;
+  }
+
+}
+
+//订单信息
+.Order-information{
+  border-bottom:1rem solid #f5f5f5;
+  border-top:1rem solid #f5f5f5;
+  background:#fff;
+  .Order-information-title{
+    background:#fff;
+    padding:0 1.4rem;
+
+    height:4rem;
+    display:-webkit-flex;
+    flex-direction:row;
+    align-items:center;
+    img{
+      margin-right:1.4rem;
+      width:1.9rem;
+      height:1.9rem;
+    }
+    span{
+
+      font-size:1.8rem;
+
+    }
+  }
+}
+
+.Order-information-content{
+  padding:0 1.4rem;
+
+  //.Package-name{
+  //  display:-webkit-flex;
+  //
+  //  justify-content:space-between;
+  //  align-items:center;
+  //}
+  ul{
+    li{
+      border-top:1px solid #eeeeee;
+      height:4rem;
+
+      display:-webkit-flex;
+
+        justify-content:space-between;
+        align-items:center;
+      div:nth-child(1){
+        font-size:1.6rem;
+      }
+
+    }
+    .Package-name{
+      .num{
+        display:inline-block;
+        margin-right:1rem;
+      }
+    }
+  }
+
+
+}
+
+//订单备注
+.Order-note{
+  color:#999;
+  background:#fff;
+  padding:0 1.4rem;
+  .Flavor{
+    color:#333;
+    height:4rem;
+    display:-webkit-flex;
+
+    justify-content:space-between;
+    align-items:center;
+    .Flavor-right{
+      color:#999;
+    }
+  }
+  .invoice{
+    border-top:1px solid #eeeeee;
+    height:4rem;
+    display:-webkit-flex;
+
+    justify-content:space-between;
+    align-items:center;
+    flex-direction:row;
+  }
+}
+
+#footer{
+  width:100%;
+  position:fixed;
+  bottom:0;
+
+  .footer-inner{
+
+    display:-webkit-flex;
+
+    justify-content:space-between;
+    align-items:center;
+    .money{
+      display:-webkit-flex;
+
+
+      align-items:center;
+      height:5rem;
+      -webkit-flex:1;
+      background:#4e4e4e;
+      span{
+        display:inline-block;
+        margin-left:1.4rem;
+        font-size:1.6rem;
+        color:#fff;
+      }
+    }
+    .Settlement{
+      display:-webkit-flex;
+
+      justify-content:center;
+      align-items:center;
+
+      height:5rem;
+      width:12.8rem;
+      background:#58d178;
+      span{
+        font-size:1.6rem;
+        color:#fff;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,156 @@
+html {
+  font-size: 625%;
+}
+body {
+  font-size: .12rem;
+}
+html,
+body {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+}
+html {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  /* Firefox */
+  -webkit-box-sizing: inherit;
+  /* Safari */
+}
+.f {
+  color: #fff;
+}
+.w100 {
+  width: 100%;
+}
+.c9 {
+  color: #999;
+}
+.c6 {
+  color: #666;
+}
+.c3 {
+  color: #333;
+}
+.bk {
+  display: block;
+}
+.tc {
+  text-align: center;
+}
+.pr {
+  position: relative;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.bgf {
+  background: #fff;
+}
+.header {
+  width: 100%;
+  height: .45rem;
+  background-image: -webkit-linear-gradient(left, #0af, #0085ff);
+  background-image: linear-gradient(90deg, #0af, #0085ff);
+  text-align: center;
+  line-height: .45rem;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.header .arrow {
+  float: left;
+  width: 0.63rem;
+  height: 100%;
+  color: #fff;
+}
+.header h1 {
+  float: left;
+  width: 0.63rem;
+  height: 100%;
+  color: #fff;
+  font-size: .16rem;
+}
+.search {
+  float: left;
+  flex: 1;
+  height: .36rem;
+  margin: auto;
+  position: relative;
+}
+.search input {
+  border-radius: .96rem;
+  padding: 0 0.3rem;
+  width: 100%;
+  height: inherit;
+  border: none;
+  box-shadow: 0 0.026667rem 0.066667rem 0 rgba(0, 0, 0, 0.2);
+  display: block;
+}
+.search .search-title {
+  width: 1.5rem;
+  height: .36rem;
+  margin-top: -0.18rem;
+  line-height: .36rem;
+  position: absolute;
+  top: 50%;
+  left: 0.2rem;
+  color: #b7b7b5;
+}
+.search .search-title i {
+  font-weight: bold;
+}
+.search .search-title b {
+  font-size: .14rem;
+  font-weight: bold;
+}
+.search-hr {
+  width: 100%;
+  height: .4rem;
+  background: #f5f5f5;
+  padding: 0 .15rem;
+  font-size: .14rem;
+  line-height: .4rem;
+}
+.search-hr h2 {
+  float: left;
+  color: #999;
+}
+.search-hr i {
+  float: right;
+}
+.search-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: .6rem;
+  background: #fff;
+}
+.search-content a {
+  padding: 0 .13rem;
+  color: #666;
+  font-size: .14rem;
+  border: 0.01rem solid #ddd;
+  border-radius: 0.05rem;
+  height: .34rem;
+  line-height: .34rem;
+  display: block;
+  float: left;
+  margin-left: 0.15rem;
+}

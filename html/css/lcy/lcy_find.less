@@ -1,0 +1,301 @@
+html{
+  font-size:62.5%;
+  height:100%;
+  background:#ffffff;
+  position:relative;
+  background:#ffffff;
+}
+body{
+  font-size:1.2rem;
+  background:#ffffff;
+}
+
+#find-header{
+  height:5rem;
+  line-height:5rem;
+  padding-left:1.65rem;
+
+  background:#2395ff;
+
+    font-size:1.8rem;
+    color:#fff;
+
+}
+
+
+
+
+
+
+#find-main{
+  overflow-y:auto;
+
+}
+.main-top{
+  background:#fff;
+  width:100%;
+  //积分
+  .integral{
+    border-bottom:1px solid #dddddd;
+    width:100%;
+
+    display:-webkit-flex;
+
+    //justify-content:space-between;
+    //align-items:center;
+    //align-content:space-between;
+
+    flex-direction:row;
+    .integral-left{
+      border-right:1px solid #dddddd;
+      width:50%;
+
+
+      h4{
+        margin-top:2.5rem;
+        margin-left:1.5rem;
+        font-size:1.6rem;
+        color:#ff9700;
+      }
+      p{
+        margin-top:.1rem;
+        margin-left:1.5rem;
+        color:#999999;
+      }
+      img{
+        margin-top:1rem;
+        height:6.2rem;
+        margin-left:4.5rem;
+      }
+    }
+
+    .integral-right{
+      width:50%;
+      //美味爆料
+      .delicious{
+
+        height:8.3rem;
+        display:-webkit-flex;
+        flex-direction:row;
+        //justify-content:center;
+        align-items:center;
+        //align-content:space-between;
+        width:100%;
+        img{
+          display:block;
+          height:4rem;
+          margin-left:2rem;
+        }
+        .delicious-left{
+            h4{
+              margin-left:1.5rem;
+              font-size:1.6rem;
+              color:#ff9700;
+            }
+          P{
+            margin-top:.1rem;
+            margin-left:1.5rem;
+            color:#999999;
+          }
+
+        }
+      }
+
+      //有奖速度
+      .Luck-draw{
+        border-top:1px solid #dddddd;
+        height:8.3rem;
+        display:-webkit-flex;
+        flex-direction:row;
+        //justify-content:center;
+        align-items:center;
+        //align-content:space-between;
+        width:100%;
+        img{
+          display:block;
+          height:4rem;
+          margin-left:2rem;
+        }
+        .Luck-draw-left{
+          h4{
+            margin-left:1.5rem;
+            font-size:1.6rem;
+            color:#ff9700;
+          }
+          P{
+            margin-top:.1rem;
+            margin-left:1.5rem;
+            color:#999999;
+          }
+        }
+      }
+    }
+
+
+  }
+
+
+}
+
+//流量
+.flow{
+  height:8.3rem;
+  width:100%;
+  display:-webkit-flex;
+  flex-direction:row;
+  .flow-inner-left{
+    border-right:1px solid #dddddd;
+    width:50%;
+    display:-webkit-flex;
+    align-items:center;
+    flex-direction:row;
+    img{
+      display:block;
+      height:4rem;
+      margin-left:2rem;
+    }
+    .flow-left{
+      h4{
+        margin-left:1.5rem;
+        font-size:1.6rem;
+        color:#ff9700;
+      }
+      P{
+        margin-top:.1rem;
+        margin-left:1.5rem;
+        color:#999999;
+      }
+  }
+
+  }
+  .flow-inner-right{
+    width:50%;
+    display:-webkit-flex;
+    flex-direction:row;
+    align-items:center;
+    img{
+      display:block;
+      height:4rem;
+      margin-left:2rem;
+    }
+    .flow-right{
+      h4{
+        margin-left:1.5rem;
+        font-size:1.6rem;
+        color:#ff9700;
+      }
+      P{
+        margin-top:.1rem;
+        margin-left:1.5rem;
+        color:#999999;
+      }
+
+  }
+
+  }
+}
+//红包
+.red-packet{
+  border-bottom:1rem solid #eeeeee;
+  border-top:1rem solid #eeeeee;
+    img{
+      height:8.3rem;
+      display:block;
+    }
+}
+
+//美食推荐{
+.Gourmet-title-bottom{
+  margin-top:.5rem;
+  text-align:center;
+  color:#999999;
+}
+.Gourmet-Recommendation-title{
+  margin-top:1.5rem;
+  text-align:center;
+
+  .Gourmet-Recommendation-title-inner{
+    margin-top:1.5rem;
+  font-weight:bold;
+    position:relative;
+    font-size:1.8rem;
+
+    i{
+      color:#f12c2c;
+      font-size:1.8rem;
+    }
+    .dot-left{
+      position:absolute;
+      border-bottom:1px solid #000;
+      width:1.6rem;
+      top:0.9rem;
+      left:-2.4rem;
+      &:after{
+        position:absolute;
+        display:block;
+        content:'';
+        height:0.6rem;
+        width:.6rem;
+        border-radius:30px;
+        background:#000;
+        top: -.2rem;
+        right: -0.6rem;
+
+      }
+    }
+    .dot-right{
+      position:absolute;
+      border-bottom:1px solid #000;
+      width:1.6rem;
+      top:0.9rem;
+      right:-2.4rem;
+      &:after{
+        position:absolute;
+        display:block;
+        content:'';
+        height:0.6rem;
+        width:.6rem;
+        border-radius:30px;
+        background:#000;
+        top: -.2rem;
+        left: -0.6rem;
+
+      }
+    }
+
+  }
+
+
+}
+
+
+.Gourmet-content{
+  ul{
+    margin-top:1.5rem;
+    display:-webkit-flex;
+    justify-content:space-around;
+    flex-direction:row;
+    li{
+      img{
+        height:8rem; width:8rem;
+        display:block;
+      }
+      .Gourmet-name{
+        //overflow: hidden;
+        //white-space: nowrap;
+        //text-overflow: ellipsis;
+        overflow:hidden;
+        white-space: nowrap;
+        text-overflow:ellipsis;
+        width:8rem;
+        margin-top:.1rem;
+
+
+      }
+      .Price{
+        color:#f94843;
+        margin-top:.6rem;
+      }
+    }
+  }
+}

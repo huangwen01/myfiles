@@ -1,0 +1,176 @@
+/*html{
+    font-size:62.5%;
+}*/
+/*body{
+    font-size:1.2rem;
+    background: #f5f5f5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}*/
+.headd{
+	height: 5.6rem;
+	width: 100%;
+	background: #0096ff;
+	padding:0 1em;
+	box-sizing: border-box;	
+	color: #fff;
+	font-size: 1.9rem;
+	line-height: 5.6rem;
+	font-size: 1.9rem;
+}
+.headd>a>.iconfont{
+	font-size: 2.5rem;
+	color: #fff;
+}
+.headd>a{
+	margin-right:2.3rem;
+}
+.headd>a:nth-of-type(2){
+	float: right;
+	color: #fff;
+	margin-right: 0;
+}
+#main{
+	width: 100%;
+	overflow: hidden;
+	padding-top: 1.3rem;
+	box-sizing: border-box;
+	background: #f5f5f5;
+	text-align: center;
+}
+#main .phone,#main .password{
+	width: 100%;
+	height:4.7rem;
+	border: 1px solid #eaeaea;
+	background: #fff;
+	padding:0 0.7rem 0 1.3rem;
+	box-sizing: border-box;
+	display: flex;
+}
+#main .password{
+	border-top: none;
+}
+#main .phone>input,#main .password>input{
+	flex: 1;
+	border: none;
+	outline: none;
+}
+#main .phone #getprev{
+	width: 10rem;
+	height: 4rem;
+	line-height: 4rem;
+	text-align: center;
+
+	color: #fff;
+	font-size: 1.6rem;
+	border: none;
+	outline: none;
+	border-radius: 0.4rem;
+	align-self: center;
+}
+
+#login{
+	width: 90%;
+	background: #4dc060;
+	color: #fff;
+	font-size:2.1rem;	
+	height: 4.65rem;
+	border: none;
+	border-radius: 0.6rem;
+	margin-top: 1.5rem;
+}
+#main .forget{
+	width: 100%;
+	margin-top: 2.3rem;
+	width: 90%;
+}
+
+#main .forget>a{
+	color: #0088cc;
+	float: right;
+}
+
+
+
+#thirdlogin{
+	margin-top:12.2rem;
+	overflow: hidden;
+	text-align: center;
+	width: 100%;
+}
+#thirdlogin h5{
+	width: 100%;
+	height: 1.8rem;
+	margin-top: 1.8rem;
+	text-align: center;
+	font-size: 1.5rem;
+	color: #999999;
+	border-top: 1px solid #cccccc;
+	position: relative;
+}
+#thirdlogin h5:after{
+	content: "第三方登录";
+	width: 9.75rem;
+	height:3.5rem;
+	display: block;
+	line-height: 3.5rem;
+	padding:0 1rem;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left:-4.87rem;
+	top:-1.8rem;
+	background: #f5f5f5;
+	
+}
+#thirdlogin .loginchannel{
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 1.75rem;
+}
+#thirdlogin .loginchannel>ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+#thirdlogin .loginchannel>ul>li{
+	flex: 1;
+	height: 6.3rem;
+}
+#thirdlogin .loginchannel>ul>li>a{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#thirdlogin .loginchannel>ul>li>a>i{
+	font-size:4.5rem;
+}
+#thirdlogin .loginchannel>ul>li>a>p{
+	color: #9a9a9a;
+	margin-top: 1rem;
+}
+#thirdlogin .loginchannel>ul>li:nth-of-type(1)>a>i{
+	color: #40bd3f;
+}
+#thirdlogin .loginchannel>ul>li:nth-of-type(2)>a>i{
+	color: #12b7f5;
+	font-size: 4.8rem;
+}
+#thirdlogin .loginchannel>ul>li:nth-of-type(3)>a>i{
+	color: #e6162d;
+}
+#thirdlogin .loginchannel>ul>li:nth-of-type(4)>a>i{
+	color: #fd4702;
+	font-size: 4.8rem;
+}

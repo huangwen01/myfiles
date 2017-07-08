@@ -1,0 +1,252 @@
+@import "./common.less";
+.header{
+  .w100;
+  height:.45rem;
+  background-image: -webkit-linear-gradient(left,#0af,#0085ff);
+  background-image: linear-gradient(90deg,#0af,#0085ff);
+  .tc;
+  line-height:.45rem;
+  .pr;
+  &:after{
+    content:"";
+    width:.1rem;
+    height:.1rem;
+    border-bottom: 0.02rem solid #fff;
+    border-left: 0.02rem solid #fff;
+    position:absolute;
+    transform: rotate(45deg);
+    top: 50%;
+    .mt(-.05rem);
+    left:0.15rem;
+    .bk;
+  }
+  h1{
+    .f;
+    font-size:.18rem;
+  }
+}
+
+//nav
+.nav{
+  width:100%;
+  height:2.5rem;
+  font-size:.12rem;
+  .bgf;
+  .c9;
+  ul{
+
+    width:100%;
+    height:100%;
+    li:nth-of-type(1){
+      span{
+        width:auto;
+      }
+      height:66.6666666%;
+      padding:.24rem .15rem .15rem .15rem;
+      img{
+        width:.75rem;
+        height:.75rem;
+        margin: .1rem .1rem 0 .1rem;
+        float:none;
+      }
+      h2{
+        color: rgb(255, 151, 0);
+      }
+    }
+    li{
+      padding:.24rem .15rem;
+      .fl;
+      display:flex;
+      width:50%;
+      height:100/3%;
+      a{
+        display:block;
+        .w100;
+        span{
+          float:left;
+          width: 70%;
+        }
+        h2{
+          font-size:.18rem;
+          margin-bottom:.06rem;
+          font-weight:100;
+          overflow:hidden;
+          white-space:nowrap;
+          text-overflow:ellipsis;
+          color:#a2cf26;
+        }
+        p{
+          overflow:hidden;
+          text-overflow:ellipsis;
+          white-space:nowrap;
+
+        }
+        img{
+          width:.45rem;
+          height:.45rem;
+          .fr;
+        }
+
+
+      }
+
+    }
+  }
+}
+.nav ul li:nth-of-type(1){
+  border-right: 0.01rem solid #f0f0f0;
+}
+.nav ul li:nth-of-type(4){
+  border-right: 0.01rem solid #f0f0f0;
+  h2{
+    color:#f74171;
+  }
+}
+.nav ul li:nth-of-type(1){
+  border-bottom: 0.01rem solid #f0f0f0;
+}
+.nav ul li:nth-of-type(2){
+  border-bottom: 0.01rem solid #f0f0f0;
+  h2{
+    color: rgb(245, 120, 93);
+  }
+}
+.nav ul li:nth-of-type(3){
+  border-bottom: 0.01rem solid #f0f0f0;
+  h2{
+    color: rgb(27, 169, 225);
+  }
+}
+//banner
+.banner{
+  width:100%;
+  height:.825rem;
+  margin-top:.11rem;
+  img {
+    width:100%;
+    height:100%;
+  }
+}
+
+//recommend
+.recommend{
+  width:100%;
+  .mt(.11rem);
+  .bgf;
+  .recommend-header{
+    width:100%;
+    height:.3rem;
+    line-height:.3rem;
+    text-align:center;
+    font-size:.18rem;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    .c3;
+    i{
+      color:#f12c2c;
+      font-size: .25rem;
+    }
+    h3{
+      line-height:.3rem;
+      margin-right: .03rem;
+    }
+    span{
+      display: block;
+      width: .2rem;
+      height: .015rem;
+      background: #2d2d2d;
+      .pr;
+    }
+  }
+  .recommend-title{
+    .c9;
+    font-size:.11rem;
+    width:100%;
+    text-align:center;
+    margin-bottom:.16rem;
+  }
+  .recommend-content{
+    width:100%;
+    ul{
+      width:100%;
+      padding:.15rem;
+      li{
+        width:100/3%;
+        padding-right: .1rem;
+        float:left;
+        a{
+          .bk;
+          .pr;
+        }
+        h4{
+          overflow:hidden;
+          white-space:nowrap;
+          text-overflow:ellipsis;
+          font-size:.13rem;
+          .mb(.05rem);
+        }
+        p{
+          color: #ff5339;
+          font-size:.11rem;
+          float: left;
+          margin-right: .03rem;
+        }
+        .old-price{
+          color: #aaa;
+          text-decoration: line-through;
+          font-weight: normal;
+          font-size: .11rem;
+        }
+      }
+    }
+    img{
+      width:1.1rem;
+      height:1.05rem;
+      .mb(.1rem);
+    }
+  }
+  .recommend-footer{
+    font-size:.13rem;
+    .c9;
+    padding-bottom:.15rem;
+    .mt(.05rem);
+    text-align:center;
+  }
+}
+.recommend-header span:nth-of-type(1):before{
+  content:"";
+  width:.07rem;
+  height:.07rem;
+  background:#2d2d2d;
+  .brr(50%);
+  display:block;
+  position:absolute;
+  right:0;
+  top: -.025rem;
+}
+.recommend-header span:nth-of-type(2):before{
+  content:"";
+  width:.07rem;
+  height:.07rem;
+  background:#2d2d2d;
+  .brr(50%);
+  display:block;
+  position:absolute;
+  left:0;
+  top: -.025rem;
+}
+.recommend .recommend-header i.offer{
+  font-size:.21rem;
+}
+.offer-mark{
+.pa(0.01rem,0.01rem);
+  display:block;
+  width:.31rem;
+  height:.15rem;
+  background:rgba(65, 61, 60,0.8);
+  color:#fff;
+}
+//首页角标
+

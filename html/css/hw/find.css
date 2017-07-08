@@ -1,0 +1,51 @@
+html{font-size: 625%}
+body{font-size: .16rem;margin-bottom:.5rem}
+.header{width: 100%;height: .56rem;background-color: #0096ff;position: relative;}
+.header h2{color: #fff;margin-left:.16rem; line-height:.56rem;font-size:.2rem;font-weight:100}
+.nav{ background-color:#fff;overflow:hidden}
+.nav ul{flex-wrap:wrap;box-sizing:border-box;-moz-box-sizing:border-box;}
+.nav ul li{position:relative; float:left;width:50%;box-sizing:border-box;-moz-box-sizing:border-box; padding-top:.25rem;padding-left:.15rem; height:.83rem;}
+.nav ul li img{ width: .4rem; height:.4rem;position:absolute; bottom:.2rem;right:.15rem}
+.nav ul li span{font-size:.12rem;color: #999;}
+.nav ul:nth-of-type(1) li{border-bottom: 1px solid #ccc;}
+.nav ul:nth-of-type(1) li:nth-of-type(1){ height:1.66rem;border-right: 1px solid #ccc;border-bottom: 1px solid #ccc;}
+.nav ul:nth-of-type(2) li:nth-of-type(1){border-right: 1px solid #ccc;}
+.nav ul:nth-of-type(1) li:nth-of-type(1) img{ width:.68rem; height:.65rem;position:absolute; ;left: 50%; margin-left:-.34rem;}
+
+.banner img{ width:100%; height:.825rem;margin:.1rem 0}
+.section{ background-color:#fff;}
+.section_top{ height:.6rem; width:100%;}
+.section_top h3{text-align:center;height: 100%;    padding-top: .1rem;}
+.section_top h3 i{color: #f12c2c;}
+.line{    display: inline-block;
+top: -.05rem;
+border: 1px solid #333;
+width: .15rem;
+height: 0;
+position: relative;}
+.line:after{position: absolute;
+top: -.03rem;
+content: "";
+background: #333;
+height: .07rem;
+width: .07rem;
+border-radius: 50%;}
+.line:nth-of-type(1):after{ right:-0.01rem;}
+.line:nth-of-type(2):after{ left:-0.01rem;}
+.section_top span:nth-of-type(3){font-size:.12rem;color: #666;}
+.section_center{ height:1.4rem; width:100%;}
+.section_center ul{ width:auto; height:100%;}
+.section_center ul li{float:left;width:33.33%; height:100%; padding-left:.1rem;box-sizing:border-box;-moz-box-sizing:border-box}
+.section_center ul li img{ width:.9rem; height:1.05rem;}
+.section_center ul li p{ font-size:.12rem;}
+.section_center ul li span{ font-size:.12rem;color: #f94843;}
+.section_bottom{ width:100%; height:.45rem;text-align:center; line-height:.45rem;}
+.section_bottom span{ font-size:.12rem;color: #666;}
+
+
+
+
+
+.footer{ width:100%; height:.5rem; background-color:#f7f7f7;position:fixed; bottom:0px;border-top:1px solid #c8c8c8;}
+.footer ul li{float:left; width:25%;text-align:center;font-size:.12rem}
+.footer ul li i{display:block;margin-top:.1rem}

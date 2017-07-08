@@ -1,0 +1,18 @@
+/*html{font-size: 625%; background-color:#f5f5f5;}
+body{font-size: .16rem;margin-bottom:.5rem; }*/
+.coll_content .header{width: 100%;height: .56rem;background-color: #0096ff;position: relative;}
+.coll_content .header h2{position:relative;color: #fff;margin-left:.16rem; line-height:.56rem;font-size:.2rem;font-weight:100;text-align:center}
+.coll_content .header h2 i{font-size:.2rem;position:absolute;left:0}
+
+.coll_content .content_orders{ background-color:#fff;}
+.coll_content .content_orders ul li{ width:100%; height:1.2rem;padding: .16rem;box-sizing:border-box;-moz-box-sizing:border-box}
+.coll_content .content_orders ul li img{ width:.4rem; height:.4rem;float:left; margin-right:.1rem;}
+.coll_content .content_orders ul li h4{ height:.22rem;line-height:.22rem}
+.coll_content .content_orders ul li h4 span{float:right; font-size:.14rem;}
+.coll_content .content_orders ul li span{ font-size:.12rem;color: #b5b5b5;}
+.coll_content .content_orders ul li p{ color: #828282;;padding-left:.5rem;box-sizing:border-box;-moz-box-sizing:border-box; margin-top:.1rem;}
+.coll_content .content_orders ul li p span{color: #333;}
+.coll_content footer{
+text-align:center;
+}
+.coll_content  footer h3{ width:100%; height:.5rem; line-height:.5rem;color: #999;}

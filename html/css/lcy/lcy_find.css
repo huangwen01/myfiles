@@ -1,0 +1,233 @@
+html {
+  font-size: 62.5%;
+  height: 100%;
+  position: relative;
+  background: #ffffff;
+}
+body {
+  font-size: 1.2rem;
+  background: #ffffff;
+}
+#find-header {
+  height: 5rem;
+  line-height: 5rem;
+  padding-left: 1.65rem;
+  background: #2395ff;
+  font-size: 1.8rem;
+  color: #fff;
+}
+#find-main {
+  overflow-y: auto;
+}
+.main-top {
+  background: #fff;
+  width: 100%;
+}
+.main-top .integral {
+  border-bottom: 1px solid #dddddd;
+  width: 100%;
+  display: -webkit-flex;
+  flex-direction: row;
+}
+.main-top .integral .integral-left {
+  border-right: 1px solid #dddddd;
+  width: 50%;
+}
+.main-top .integral .integral-left h4 {
+  margin-top: 2.5rem;
+  margin-left: 1.5rem;
+  font-size: 1.6rem;
+  color: #ff9700;
+}
+.main-top .integral .integral-left p {
+  margin-top: .1rem;
+  margin-left: 1.5rem;
+  color: #999999;
+}
+.main-top .integral .integral-left img {
+  margin-top: 1rem;
+  height: 6.2rem;
+  margin-left: 4.5rem;
+}
+.main-top .integral .integral-right {
+  width: 50%;
+}
+.main-top .integral .integral-right .delicious {
+  height: 8.3rem;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.main-top .integral .integral-right .delicious img {
+  display: block;
+  height: 4rem;
+  margin-left: 2rem;
+}
+.main-top .integral .integral-right .delicious .delicious-left h4 {
+  margin-left: 1.5rem;
+  font-size: 1.6rem;
+  color: #ff9700;
+}
+.main-top .integral .integral-right .delicious .delicious-left P {
+  margin-top: .1rem;
+  margin-left: 1.5rem;
+  color: #999999;
+}
+.main-top .integral .integral-right .Luck-draw {
+  border-top: 1px solid #dddddd;
+  height: 8.3rem;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.main-top .integral .integral-right .Luck-draw img {
+  display: block;
+  height: 4rem;
+  margin-left: 2rem;
+}
+.main-top .integral .integral-right .Luck-draw .Luck-draw-left h4 {
+  margin-left: 1.5rem;
+  font-size: 1.6rem;
+  color: #ff9700;
+}
+.main-top .integral .integral-right .Luck-draw .Luck-draw-left P {
+  margin-top: .1rem;
+  margin-left: 1.5rem;
+  color: #999999;
+}
+.flow {
+  height: 8.3rem;
+  width: 100%;
+  display: -webkit-flex;
+  flex-direction: row;
+}
+.flow .flow-inner-left {
+  border-right: 1px solid #dddddd;
+  width: 50%;
+  display: -webkit-flex;
+  align-items: center;
+  flex-direction: row;
+}
+.flow .flow-inner-left img {
+  display: block;
+  height: 4rem;
+  margin-left: 2rem;
+}
+.flow .flow-inner-left .flow-left h4 {
+  margin-left: 1.5rem;
+  font-size: 1.6rem;
+  color: #ff9700;
+}
+.flow .flow-inner-left .flow-left P {
+  margin-top: .1rem;
+  margin-left: 1.5rem;
+  color: #999999;
+}
+.flow .flow-inner-right {
+  width: 50%;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: center;
+}
+.flow .flow-inner-right img {
+  display: block;
+  height: 4rem;
+  margin-left: 2rem;
+}
+.flow .flow-inner-right .flow-right h4 {
+  margin-left: 1.5rem;
+  font-size: 1.6rem;
+  color: #ff9700;
+}
+.flow .flow-inner-right .flow-right P {
+  margin-top: .1rem;
+  margin-left: 1.5rem;
+  color: #999999;
+}
+.red-packet {
+  border-bottom: 1rem solid #eeeeee;
+  border-top: 1rem solid #eeeeee;
+}
+.red-packet img {
+  height: 8.3rem;
+  display: block;
+}
+.Gourmet-title-bottom {
+  margin-top: .5rem;
+  text-align: center;
+  color: #999999;
+}
+.Gourmet-Recommendation-title {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+.Gourmet-Recommendation-title .Gourmet-Recommendation-title-inner {
+  margin-top: 1.5rem;
+  font-weight: bold;
+  position: relative;
+  font-size: 1.8rem;
+}
+.Gourmet-Recommendation-title .Gourmet-Recommendation-title-inner i {
+  color: #f12c2c;
+  font-size: 1.8rem;
+}
+.Gourmet-Recommendation-title .Gourmet-Recommendation-title-inner .dot-left {
+  position: absolute;
+  border-bottom: 1px solid #000;
+  width: 1.6rem;
+  top: 0.9rem;
+  left: -2.4rem;
+}
+.Gourmet-Recommendation-title .Gourmet-Recommendation-title-inner .dot-left:after {
+  position: absolute;
+  display: block;
+  content: '';
+  height: 0.6rem;
+  width: .6rem;
+  border-radius: 30px;
+  background: #000;
+  top: -0.2rem;
+  right: -0.6rem;
+}
+.Gourmet-Recommendation-title .Gourmet-Recommendation-title-inner .dot-right {
+  position: absolute;
+  border-bottom: 1px solid #000;
+  width: 1.6rem;
+  top: 0.9rem;
+  right: -2.4rem;
+}
+.Gourmet-Recommendation-title .Gourmet-Recommendation-title-inner .dot-right:after {
+  position: absolute;
+  display: block;
+  content: '';
+  height: 0.6rem;
+  width: .6rem;
+  border-radius: 30px;
+  background: #000;
+  top: -0.2rem;
+  left: -0.6rem;
+}
+.Gourmet-content ul {
+  margin-top: 1.5rem;
+  display: -webkit-flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.Gourmet-content ul li img {
+  height: 8rem;
+  width: 8rem;
+  display: block;
+}
+.Gourmet-content ul li .Gourmet-name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 8rem;
+  margin-top: .1rem;
+}
+.Gourmet-content ul li .Price {
+  color: #f94843;
+  margin-top: .6rem;
+}

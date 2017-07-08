@@ -1,0 +1,173 @@
+/*html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.2rem;
+    background: #f5f5f5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}*/
+.reg_content .reg_content_t{
+	height: 5.6rem;
+	width: 100%;
+	background: #0096ff;
+	padding:0 1em;
+	box-sizing: border-box;	
+	color: #fff;
+	font-size: 1.9rem;
+	line-height: 5.6rem;
+	font-size: 1.9rem;
+	
+}
+.reg_content .reg_content_t>a>.iconfont{
+	font-size: 2.5rem;
+	color: #fff;
+}
+.reg_content .reg_content_t>a{
+	margin-right:2.3rem;
+}
+.reg_content_t>a:nth-of-type(2){
+	float: right;
+	color: #fff;
+	margin-right: 0;
+}
+.reg_content #main{
+	width: 100%;
+	overflow:hidden;
+	padding-top: 1.3rem;
+	box-sizing: border-box;
+	background: #f5f5f5;
+	text-align: center;
+}
+.reg_content #main .phone,#main .prevnum{
+	width: 100%;
+	height:4.7rem;
+	border: 1px solid #eaeaea;
+	background: #fff;
+	padding:0 0.7rem 0 1.3rem;
+	box-sizing: border-box;
+	display: flex;
+}
+.reg_content #main .prevnum{
+	border-top: none;
+}
+.reg_content #main .phone>input,#main .prevnum>input{
+	flex: 1;
+	border: none;
+	outline: none;
+}
+.reg_content #main .phone #getprev{
+	width: 10rem;
+	height: 3rem;
+	line-height: 3rem;
+	text-align: center;
+    background-color: red;
+	color: #fff;
+	font-size: 1.6rem;
+	border: none;
+	outline: none;
+	border-radius: 0.4rem;
+	align-self: center;
+}
+.reg_content #main .prompt{
+	padding:1.7rem 1.3rem 2.7rem 1.3rem;
+	box-sizing: border-box;
+	line-height: 1.4rem;
+}
+.reg_content #main .prompt>a{
+	color: #0088cc;
+}
+.reg_content #nextstep{
+	width: 90%;
+	background: #4dc060;
+	color: #fff;
+	font-size:2.1rem;	
+	height: 4.65rem;
+	border: none;
+	border-radius: 0.6rem;
+}
+.reg_content #thirdlogin{
+	margin-top:12.2rem;
+	overflow: hidden;
+	text-align: center;
+	width: 100%;
+}
+.reg_content #thirdlogin h5{
+	width: 100%;
+	height: 1.8rem;
+	margin-top: 1.8rem;
+	text-align: center;
+	font-size: 1.5rem;
+	color: #999999;
+	border-top: 1px solid #cccccc;
+	position: relative;
+}
+.reg_content #thirdlogin h5:after{
+	content: "第三方登录";
+	width: 9.75rem;
+	height:3.5rem;
+	display: block;
+	line-height: 3.5rem;
+	padding:0 1rem;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left:-4.87rem;
+	top:-1.8rem;
+	background: #f5f5f5;
+	
+}
+.reg_content #thirdlogin .loginchannel{
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 1.75rem;
+}
+.reg_content #thirdlogin .loginchannel>ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.reg_content #thirdlogin .loginchannel>ul>li{
+	flex: 1;
+	height: 8.3rem;
+}
+.reg_content #thirdlogin .loginchannel>ul>li>a{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.reg_content #thirdlogin .loginchannel>ul>li>a>i{
+	font-size:4.5rem;
+}
+.reg_content #thirdlogin .loginchannel>ul>li>a>p{
+	color: #9a9a9a;
+	margin-top: 1rem;
+}
+.reg_content #thirdlogin .loginchannel>ul>li:nth-of-type(1)>a>i{
+	color: #40bd3f;
+}
+.reg_content #thirdlogin .loginchannel>ul>li:nth-of-type(2)>a>i{
+	color: #12b7f5;
+	font-size: 4.8rem;
+}
+.reg_content #thirdlogin .loginchannel>ul>li:nth-of-type(3)>a>i{
+	color: #e6162d;
+}
+.reg_content #thirdlogin .loginchannel>ul>li:nth-of-type(4)>a>i{
+	color: #fd4702;
+	font-size: 4.8rem;
+}
+.reg_content a{color: #fff}
+.reg_content .case{width: 100%;height: 3.9rem;position: relative;margin-top: 1rem;    }
+.reg_content .case>input{float: left;position: absolute;left: 0;width: 50%;height: 3rem;border:0;padding-left: 1rem;}
